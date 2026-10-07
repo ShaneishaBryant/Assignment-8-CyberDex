@@ -13,3 +13,11 @@ Phase 2 Question
 Why is it more flexible to use an interface for an ability like Flyable rather than putting a fly() method in the DigitalMonster base class?
 
 Placing a fly() method in the base class forces all creatures to inherit it, even when it isn't relevant to every monster. Using a Flyable interface ensures this capability is granted strictly to the monsters that actually need it. Also, Java allows classes to implement multiple interfaces, so you can mix and match traits like flying or electric.
+
+
+
+Phase 3 Question
+
+Explain how polymorphism allows you to store different types of monsters (Flame, Aqua, Storm, etc.) in a single ArrayList. Why is this better than creating separate lists for every single monster species?
+
+Polymorphism allows you to store different monster types in a single list by treating child classes as their shared parent class. This works through inheritance and the "IS-A" relationship—for example, a FlameMonster is a DigitalMonster. Storing monsters this way eliminates duplicate code by allowing a single loop to manage your whole team, while making the codebase easy to expand whenever you add new monster species.
