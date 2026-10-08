@@ -30,3 +30,12 @@ How does the instanceof operator help you handle interfaces in a polymorphic lis
 
 The instanceof operator acts as a type-checking safety guard, allowing you to inspect an object at runtime to check if it implements a specific interface and safely cast it. Imagine an RPG dungeon in an "Underwater Temple" where an environmental trap sends an electrical surge across a flooded floor, affecting each creature differently based on its capabilities. 
 By looping through an ArrayList, the game can use instanceof Electric to heal conductive creatures or instanceof Swimmable to let aquatic monsters navigate the flood safely. Ultimately, instanceof enables the game to dynamically trigger interface-specific behaviors across any creature without risking runtime errors.
+
+
+
+Phase 5 Question
+
+What bugs or edge cases did you discover during testing? If you consulted an LLM, what feedback did it provide, and did you choose to apply any of it? Explain your reasoning.
+
+During testing, I identified a constructor parameter mismatch and updated the arguments in both Main and the subclass constructors. The LLM noted a potential logical issue regarding Charizard not being able to fly, suggesting that I either make FlameMonster implement Flyable or create a new DragonMonster class. I chose not to make FlameMonster implement Flyable because that would force all flame-type monsters (including non-flying ones like Charmander) to inherit the fly() method. 
+Instead, I kept Flyable isolated to specific classes so that flying capabilities remain strictly limited to the individual monster species that actually need them.

@@ -11,6 +11,9 @@ public class Main {
         roster.add(new FlameMonster("Charizard", 65));
         roster.add(new AquaMonster("Squirtle", 56));
         roster.add(new AquaMonster("Zapdos", 35));
+        roster.add(new FlameMonster("Mewtwo", 70));
+        roster.add(new AquaMonster("Snorlax", 25));
+        roster.add(new FlameMonster("Pikachu", 80));
 
         //for each loop to iterate through array and call performAttack
         System.out.println("-------The Cyber-Dex-------");
