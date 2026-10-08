@@ -1,6 +1,6 @@
 public class FlameMonster extends DigitalMonster {
 
-    public FlameMonster(String name, int level, String element){
+    public FlameMonster(String name, int level){
         super(name, level, "Fire");
     }
 

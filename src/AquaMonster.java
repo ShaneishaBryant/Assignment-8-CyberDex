@@ -1,6 +1,6 @@
 public class AquaMonster extends DigitalMonster implements Electric, Flyable{
 
-    public AquaMonster (String name, int level, String element){
+    public AquaMonster (String name, int level){
         super(name, level, "Water");
     }
 
